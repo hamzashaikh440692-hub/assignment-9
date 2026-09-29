@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+        }
+
+        .container {
+            width: 670px;
+            height: 500px;
+            background: white;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .login-box {
+            width: 52%;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .login-box h1 {
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .social {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .social span {
+            width: 34px;
+            height: 34px;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .account-text {
+            font-size: 12px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .login-box input {
+            width: 245px;
+            height: 34px;
+            border: none;
+            background: #e9edf1;
+            margin: 7px 0;
+            padding: 10px;
+            outline: none;
+        }
+
+        .forgot {
+            font-size: 13px;
+            color: #555;
+            margin: 15px 0;
+        }
+
+        .signin-btn {
+            width: 120px;
+            height: 36px;
+            border: none;
+            border-radius: 20px;
+            background: #ff4b2b;
+            color: white;
+            font-size: 11px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .welcome-box {
+            width: 48%;
+            background: linear-gradient(135deg, #ff302b, #ff4b2b);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .welcome-box h2 {
+            font-size: 27px;
+            margin-bottom: 18px;
+        }
+
+        .welcome-box p {
+            font-size: 13px;
+            line-height: 20px;
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
+
+        .signup-btn {
+            width: 128px;
+            height: 36px;
+            border: 1px solid white;
+            border-radius: 20px;
+            background: transparent;
+            color: white;
+            font-size: 11px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .signin-btn:hover {
+            background: #e63e20;
+        }
+
+        .signup-btn:hover {
+            background: white;
+            color: #ff4b2b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+      
+        <div class="login-box">
+
+            <h1>Sign in</h1>
+
+            <div class="social">
+                <span>f</span>
+                <span>G+</span>
+                <span>in</span>
+            </div>
+
+            <p class="account-text">or use your account</p>
+
+            <input type="email" placeholder="Email">
+
+            <input type="password" placeholder="Password">
+
+            <p class="forgot">Forgot your password?</p>
+
+            <button class="signin-btn">SIGN IN</button>
+
+        </div>
+
+        <div class="welcome-box">
+
+            <h2>Hello, Friend!</h2>
+
+            <p>
+                Enter your personal details and start<br>
+                journey with us
+            </p>
+
+            <button class="signup-btn">SIGN UP</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
